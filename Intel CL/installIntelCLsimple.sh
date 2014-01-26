@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Need libnuma1 for icd detection in jocl"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"

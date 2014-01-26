@@ -11,7 +11,7 @@ echo "Install Basic"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 cd BasicScripts
 
-sh installBasics.sh
+sh installBasicsEC2.sh
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Fix Ubuntu12.04 system problem error"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -20,10 +20,5 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "install more libs"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sh installClibs.sh
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "install weather widget,Chrome, adobe reader"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-sh getChrome.sh
-sh getAdobeReader.sh
 
 
