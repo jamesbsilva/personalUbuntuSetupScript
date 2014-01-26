@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-get install python-gpgme
+sudo apt-fast install python-gpgme

@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo add-apt-repository  ppa:stebbins/handbrake-releases
-sudo apt-get update
-sudo apt-get install handbrake-cli
+sudo apt-fast update
+sudo apt-fast install handbrake-cli
 
