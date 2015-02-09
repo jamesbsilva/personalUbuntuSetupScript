@@ -3,8 +3,8 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Install Bumblebee"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sudo add-apt-repository ppa:bumblebee/stable
-sudo apt-fast update 
-sudo apt-fast install bumblebee bumblebee-nvidia primus linux-headers-generic
+sudo apt-get update 
+sudo apt-get install bumblebee bumblebee-nvidia primus linux-headers-generic
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Alias Nvidia-Settings"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"

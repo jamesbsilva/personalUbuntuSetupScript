@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo add-apt-repository ppa:atareao/atareao
-sudo apt-fast update
-sudo apt-fast install my-weather-indicator
+sudo apt-get update
+sudo apt-get install my-weather-indicator
 

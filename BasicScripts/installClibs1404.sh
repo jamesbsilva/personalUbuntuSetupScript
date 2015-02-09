@@ -1,13 +1,10 @@
 #!/bin/bash
-sudo apt-get install build-essential
+sudo apt-get install build-essential libavformat-dev
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Install OpenCV"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-sudo apt-get install libavformat-dev ffmpeg
-
 sudo apt-get install libopencv-dev
-sudo apt-get install libcv2.1 libcvaux2.1 libhighgui2.1 python-opencv opencv-doc libcv-dev libcvaux-dev libhighgui-dev
+sudo apt-get install libcv2.4 libcvaux2.4 libhighgui2.4 python-opencv opencv-doc libcv-dev libcvaux-dev libhighgui-dev
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Install WxWidgets, BOOST"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"

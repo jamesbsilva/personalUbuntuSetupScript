@@ -10,10 +10,5 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 sudo apt-get install synaptic gnuplot vsftpd openssh-client openssh-server vlc emacs imagemagick git subversion meld openjdk-7-jdk screen pdftk
 
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Remove Java 6"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-sudo apt-get remove openjdk-6-jdk
 
 

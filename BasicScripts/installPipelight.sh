@@ -1,3 +1,3 @@
 sudo add-apt-repository ppa:pipelight/stable
-sudo apt-fast update
-sudo apt-fast install pipelight
+sudo apt-get update
+sudo apt-get install pipelight
