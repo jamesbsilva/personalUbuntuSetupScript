@@ -6,7 +6,7 @@
 #
 sudo update-manager
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Install Basic (1/13)"
+echo "Install Basic (1/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 cd BasicScripts
 
@@ -16,7 +16,7 @@ sudo ./installBasics.sh
 sudo apt-get install openjdk-8-jdk openjdk-8-jre
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo " remove overlay scroll / update mtp (2/13)"
+echo " remove overlay scroll / update mtp (2/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sh fixUbuntuSystemProgError.sh
 sudo gsettings set com.canonical.desktop.interface scrollbar-mode normal
@@ -25,7 +25,7 @@ sudo apt-get remove overlay-scrollbar
 #sudo apt-get update
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "prep Matlab and dropbox and get Nautilus backspace back (3/13)"
+echo "prep Matlab and dropbox and get Nautilus backspace back (3/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sudo ./fixErrorMatlab1404.sh
 sudo ./prepDropbox.sh
@@ -35,19 +35,18 @@ echo '(gtk_accel_path "<Actions>/ShellActions/Up" "BackSpace")' >> ~/.config/nau
 
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Install NVIDIA Drivers for GT 750M and Bumblebee (5/13)"
+echo "Install NVIDIA Drivers for GT 750M and Bumblebee (4/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-#sudo ./installNVIDIAGT750M-1404.sh
 sudo ./installNVIDIAGT750AndBumblee1410.sh
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "install more libs (6/13)"
+echo "install more libs (5/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sudo ./installClibs1404.sh
 sudo ./installPythonDev.sh
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "install weather widget,Chrome, adobe reader (7/13)"
+echo "install weather widget,Chrome, adobe reader (6/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sh setupMyWeather.sh
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -56,17 +55,16 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 sudo apt-get install pepperflashplugin-nonfree 
 sudo ./installPipelight.sh
-#sh getAdobeReader.sh
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "install grub customizer (9/13)"
+echo "install grub customizer (7/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sudo sh setupGrubCustomizer.sh
 
 cd ..
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Install Cairo-Dock (12/13)"
+echo "Install Cairo-Dock (8/8)"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 sudo apt-get install cairo-dock cairo-dock-plug-ins
 
